@@ -1,0 +1,69 @@
+<!--This code is written by Prithvi Raj Vuppalapati-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Git Analyzer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  </head>
+  <body>
+    <h1>Welcome to GitAnalyzer</h1>
+
+  <div class="well text-center">
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="GitInput_form">Git URL</label>
+        <input type="URl" id="GitInput_form" placeholder="Paste URl here...." class="form-control">
+        <input class="btn btn-info" id="submitURL" type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+  <div class="well text-center">
+    <table class="table table-striped" id="table">
+      <thead>
+        <tr>
+        <th>#</th>
+        <th>Type of Issues</th>
+        <th>Status</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Total no of open Issues</td>
+          <td id="item1">
+            0
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>No of Issues in last 24 hours</td>
+          <td id="item2">
+            0
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>No of Issues between 24 hours and 7 days</td>
+          <td id="item3">
+            0
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>No of Issues opened for more than 7 days</td>
+          <td id="item4">
+            0
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="public/js/gitService.js"></script>
+  </body>
+</html>
